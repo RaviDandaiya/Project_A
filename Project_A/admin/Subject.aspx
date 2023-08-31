@@ -25,10 +25,9 @@
             <td>
              <b>Year: &nbsp;&nbsp;&nbsp;</b></td>
             <td>
-                <asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="True" 
-                    Height="40px" Width="197px" 
-                    >
-                    <asp:ListItem Value="0" >Select Year</asp:ListItem>
+                <asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="True"
+                    Height="40px" Width="197px" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged">
+                    <asp:ListItem Value="0">Select Year</asp:ListItem>
                     <asp:ListItem Value="1">First Year</asp:ListItem>
                     <asp:ListItem Value="2">Second Year</asp:ListItem>
                     <asp:ListItem Value="3">Third Year</asp:ListItem>
@@ -56,8 +55,8 @@
         </tr>
         <tr>
             <td colspan="2" align="center">
-                <asp:Button ID="Button1" runat="server" Text="Add" Font-Bold="True" 
-                    Height="47px" Width="86px" Font-Size="Medium" /></td>
+                <asp:Button ID="Button1" runat="server" Text="Add" Font-Bold="True"
+                    Height="47px" Width="86px" Font-Size="Medium" OnClick="Button1_Click" /></td>
             
         </tr> 
 
