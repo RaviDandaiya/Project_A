@@ -25,25 +25,18 @@ namespace Project_A.admin
         private void GridShow()
         {
             SqlConnection con = new SqlConnection(str);
-            SqlCommand cmd = new SqlCommand("select * from Course", con);
-            con.Open();
-            DropDownList1.DataSource = cmd.ExecuteReader();
-
-            DropDownList1.DataTextField = "CourseName";
-            DropDownList1.DataValueField = "CID";
-            DropDownList1.DataBind();
+            SqlDataAdapter sda = new SqlDataAdapter("select * from Course", con);
+            DataTable dataTable = new DataTable();
+            sda.Fill(dataTable);
+            DropDownList1.DataSource = dataTable;
             DropDownList1.Items.Insert(0, "Select Course");
-            con.Close();
+            DropDownList1.DataTextField = "CourseName";
+            DropDownList1.DataBind();
+           
         }
 
-       
-        private void clear()
-        {
-            DropDownList1.SelectedValue = "Select Course";
-            //DropDownList2.SelectedValue = "Select Year";
-            //DropDownList3.SelectedValue = "Select Semester";
-            TextBox1.Text = "";
-        }
+
+   
         private void ShowSubject()
         {
             SqlConnection con = new SqlConnection(str);
@@ -55,7 +48,13 @@ namespace Project_A.admin
             GridView1.DataBind();
 
         }
-
+        private void clear()
+        {
+            //DropDownList1.SelectedValue = "Select Course";
+            //DropDownList2.SelectedValue = "Select Year";
+            //DropDownList3.SelectedValue = "Select Semester";
+            TextBox1.Text = "";
+        }
         protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (int.Parse(DropDownList2.SelectedValue) > 0)
@@ -119,6 +118,8 @@ namespace Project_A.admin
                 Label1.Text = "Subject added successfully";
                 Label1.ForeColor = System.Drawing.Color.Green;
                 clear();
+                GridShow();
+                ShowSubject();
             }
         }
     }

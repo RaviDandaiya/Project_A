@@ -3,8 +3,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <center>
-<div style="background-image: url('images/background1.jpg'); width: 1200px">
+   <center>
+<div style="background-image: url('Images/background1.jpg'); width: 1200px">
     <table align="center" style="height: 340px; width: 392px">
         <tr>
             <td colspan="2" align="center">
@@ -41,7 +41,7 @@
             <td>
                 <asp:DropDownList ID="DropDownList3" runat="server" AutoPostBack="True" 
                     Height="40px" Width="197px" 
-                    >
+                    onselectedindexchanged="DropDownList3_SelectedIndexChanged">
                     <asp:ListItem Value="0" >Select Year</asp:ListItem>
                     <asp:ListItem Value="1">First Year</asp:ListItem>
                     <asp:ListItem Value="2">Second Year</asp:ListItem>
@@ -55,9 +55,8 @@
             <td>
              <b>Semester: &nbsp;&nbsp;&nbsp;</b></td>
             <td>
-                <asp:DropDownList ID="DropDownList5" runat="server" AutoPostBack="True" 
-                    Height="40px" Width="197px" 
-                    >
+                <asp:DropDownList ID="DropDownList5" runat="server" AutoPostBack="True"
+                    Height="40px" Width="197px" OnSelectedIndexChanged="DropDownList5_SelectedIndexChanged">
                     <asp:ListItem Value="0" >Select Semester</asp:ListItem>
                 </asp:DropDownList>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" 
@@ -78,8 +77,8 @@
         </tr>
         <tr>
             <td colspan="2" align="center">
-                <asp:Button ID="Button1" runat="server" Text="Add" Font-Bold="True" 
-                    Height="47px" Width="86px"  />
+                <asp:Button ID="Button1" runat="server" Text="Add" Font-Bold="True"
+                    Height="47px" Width="86px" OnClick="Button1_Click" />
                     
                    </td>
             
