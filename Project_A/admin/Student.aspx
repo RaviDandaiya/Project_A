@@ -43,13 +43,11 @@
              <b>Roll_No: &nbsp;&nbsp;&nbsp;</b></td>
             <td>
                <asp:TextBox ID="TextBox4" runat="server" Width="197px" Height="41px" 
-                    TextMode="Number" placeholder="Student Roll_No."></asp:TextBox>
+                     placeholder="Student Roll_No."></asp:TextBox>
                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
                         ControlToValidate="TextBox4" ErrorMessage="Roll No. is empty" 
                     ForeColor="Red" >*</asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" 
-                        ControlToValidate="TextBox4" ErrorMessage="Invalid Phone Number" 
-                        ForeColor="Red" ValidationExpression="[0-9]{7}">*</asp:RegularExpressionValidator>
+                    
                </td>  
                
         </tr>
@@ -70,7 +68,7 @@
              <b>Contact_No: &nbsp;&nbsp;&nbsp;</b></td>
             <td>
                <asp:TextBox ID="TextBox3" runat="server" Width="197px" Height="41px" 
-                    TextMode="Number" placeholder="Student Phone_No."></asp:TextBox>
+                     placeholder="Student Phone_No."></asp:TextBox>
                <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" 
                         ControlToValidate="TextBox3" ErrorMessage="Contact No is empty" 
                     ForeColor="Red" >*</asp:RequiredFieldValidator>
@@ -95,8 +93,8 @@
             <td>
              <b>Year: &nbsp;&nbsp;&nbsp;</b></td>
             <td>
-                <asp:DropDownList ID="DropDownList3" runat="server" AutoPostBack="True" 
-                    Height="40px" Width="197px" >
+                <asp:DropDownList ID="DropDownList3" runat="server" AutoPostBack="True"
+                    Height="40px" Width="197px" OnSelectedIndexChanged="DropDownList3_SelectedIndexChanged">
                     <asp:ListItem Value="0" >Select Year</asp:ListItem>
                     <asp:ListItem Value="1">First Year</asp:ListItem>
                     <asp:ListItem Value="2">Second Year</asp:ListItem>
@@ -123,8 +121,8 @@
          
         <tr>
             <td colspan="2" align="center">
-                <asp:Button ID="Button1" runat="server" Text="Add" Font-Bold="True" 
-                    Height="47px" Width="86px" Font-Size="Medium"/></td>
+                <asp:Button ID="Button1" runat="server" Text="Add" Font-Bold="True"
+                    Height="47px" Width="86px" Font-Size="Medium" OnClick="Button1_Click" /></td>
             
         </tr> 
 

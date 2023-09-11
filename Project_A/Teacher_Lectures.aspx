@@ -36,8 +36,8 @@
                 <b>Semester: </b>
             </td>
             <td>
-                <asp:DropDownList ID="DropDownList5" runat="server" Height="40px" Width="125px" 
-                    AutoPostBack="true">
+                <asp:DropDownList ID="DropDownList5" runat="server" Height="40px" Width="125px"
+                    AutoPostBack="true" OnSelectedIndexChanged="DropDownList5_SelectedIndexChanged">
                     <asp:ListItem>Select Semester</asp:ListItem>
                     <asp:ListItem>Sem I</asp:ListItem>
                     <asp:ListItem>Sem II</asp:ListItem>
@@ -68,7 +68,7 @@
         <tr>
             <td colspan="11" align="center">
                 <asp:Button ID="Button1" runat="server" Text="Select" Font-Bold="True" Height="40px"
-                    Width="92px"  />
+                    Width="92px" OnClick="Button1_Click" />
             </td>
         </tr>
         <tr>

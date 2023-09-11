@@ -94,7 +94,9 @@
     <Content Include="images\user-image-with-black-background.png" />
     <Content Include="images\user.png" />
     <Content Include="Mark_Attendance.aspx" />
+    <Content Include="sattendance.aspx" />
     <Content Include="stafflogin.aspx" />
+    <Content Include="studs.aspx" />
     <Content Include="Teacher_Home.aspx" />
     <Content Include="Teacher_Lectures.aspx" />
     <Content Include="Web.config" />
@@ -172,12 +174,33 @@
       <DependentUpon>Mark_Attendance.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sattendance.aspx.cs">
+      <DependentUpon>sattendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sattendance.aspx.designer.cs">
+      <DependentUpon>sattendance.aspx</DependentUpon>
+    </Compile>
     <Compile Include="stafflogin.aspx.cs">
       <DependentUpon>stafflogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="stafflogin.aspx.designer.cs">
       <DependentUpon>stafflogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="stud.Master.cs">
+      <DependentUpon>stud.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="stud.Master.designer.cs">
+      <DependentUpon>stud.Master</DependentUpon>
+    </Compile>
+    <Compile Include="studs.aspx.cs">
+      <DependentUpon>studs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="studs.aspx.designer.cs">
+      <DependentUpon>studs.aspx</DependentUpon>
     </Compile>
     <Compile Include="TeacherMaster.Master.cs">
       <DependentUpon>TeacherMaster.Master</DependentUpon>
@@ -213,6 +236,7 @@
     <Content Include="admin\Admin.Master" />
     <None Include="packages.config" />
     <Content Include="TeacherMaster.Master" />
+    <Content Include="stud.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
