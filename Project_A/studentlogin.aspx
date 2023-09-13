@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="userlogin.aspx.cs" Inherits="Project_A.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="studentlogin.aspx.cs" Inherits="Project_A.studentlogin" %>
 
 <!DOCTYPE html>
 
@@ -54,7 +54,7 @@
                                      <asp:TextBox ID="TextBox2" CssClass="form-control" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
                                  </div>
                                  <div class="form-group">
-                                     <asp:Button ID="Button1" class="btn btn-primary btn-block btn-lg" runat="server" Text="Login" BackColor="Aqua" ForeColor="Black" />
+                                     <asp:Button ID="Button1" class="btn btn-primary btn-block btn-lg" runat="server" Text="Login" BackColor="Aqua" ForeColor="Black" OnClick="Button1_Click" />
                                  </div>
                                 
                              </div>

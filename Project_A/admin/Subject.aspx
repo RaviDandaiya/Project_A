@@ -16,8 +16,8 @@
             <td>
                 <b>Course: &nbsp;&nbsp;&nbsp;</b></td>
             <td>
-                <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" 
-                    Height="40px" Width="197px">
+                <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True"
+                    Height="40px" Width="197px" >
                 </asp:DropDownList>
             </td>
         </tr>

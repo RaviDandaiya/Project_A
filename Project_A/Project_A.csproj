@@ -96,11 +96,11 @@
     <Content Include="Mark_Attendance.aspx" />
     <Content Include="sattendance.aspx" />
     <Content Include="stafflogin.aspx" />
+    <Content Include="studentlogin.aspx" />
     <Content Include="studs.aspx" />
     <Content Include="Teacher_Home.aspx" />
     <Content Include="Teacher_Lectures.aspx" />
     <Content Include="Web.config" />
-    <Content Include="userlogin.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="admin\Admin.Master.cs">
@@ -195,6 +195,13 @@
     <Compile Include="stud.Master.designer.cs">
       <DependentUpon>stud.Master</DependentUpon>
     </Compile>
+    <Compile Include="studentlogin.aspx.cs">
+      <DependentUpon>studentlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="studentlogin.aspx.designer.cs">
+      <DependentUpon>studentlogin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="studs.aspx.cs">
       <DependentUpon>studs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -222,13 +229,6 @@
     </Compile>
     <Compile Include="Teacher_Lectures.aspx.designer.cs">
       <DependentUpon>Teacher_Lectures.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="userlogin.aspx.cs">
-      <DependentUpon>userlogin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="userlogin.aspx.designer.cs">
-      <DependentUpon>userlogin.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

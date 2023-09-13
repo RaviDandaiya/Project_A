@@ -11,7 +11,7 @@ namespace Project_A
 {
 
 
-    public partial class WebForm1
+    public partial class studentlogin
     {
 
         /// <summary>

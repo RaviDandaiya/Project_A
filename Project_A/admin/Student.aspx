@@ -63,6 +63,16 @@
                </td>  
                
         </tr>
+            <td>
+             <b>Password: &nbsp;&nbsp;&nbsp;</b></td>
+            <td>
+             <asp:TextBox ID="TextBox6" runat="server" Width="197px" Height="41px" 
+                    TextMode="password" placeholder="Password"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" 
+                        ControlToValidate="TextBox6" ErrorMessage="password is empty" 
+                    ForeColor="Red" >*</asp:RequiredFieldValidator>
+               </td>  
+          
         <tr>
             <td>
              <b>Contact_No: &nbsp;&nbsp;&nbsp;</b></td>

@@ -65,7 +65,7 @@ namespace Project_A.admin
                     string LName = TextBox5.Text;
                     string FullName = FName + LName;
                     SqlConnection con = new SqlConnection(str);
-                    SqlCommand cmd = new SqlCommand("insert into Student(SName,Roll,Email,Phone,Course,Year,Sem) values(@1,@2,@3,@4,@5,@6,@7)", con);
+                    SqlCommand cmd = new SqlCommand("insert into Student(SName,Roll,Email,Phone,Course,Year,Sem,spassword) values(@1,@2,@3,@4,@5,@6,@7,@8)", con);
                     con.Open();
                     cmd.Parameters.AddWithValue("@1", FullName);
                     cmd.Parameters.AddWithValue("@2", TextBox4.Text);
@@ -74,6 +74,7 @@ namespace Project_A.admin
                     cmd.Parameters.AddWithValue("@5", DropDownList2.SelectedItem.Text);
                     cmd.Parameters.AddWithValue("@6", DropDownList3.SelectedItem.Text);
                     cmd.Parameters.AddWithValue("@7", DropDownList1.SelectedItem.Text);
+                    cmd.Parameters.AddWithValue("@8", TextBox6.Text);
                     cmd.ExecuteNonQuery();
                     con.Close();
                     TextBox1.Text = "";

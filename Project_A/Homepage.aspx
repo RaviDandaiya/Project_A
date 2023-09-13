@@ -78,7 +78,7 @@
                            <asp:LinkButton class="nav-item cad" href="stafflogin.aspx" ID="Linkbutton2" runat="server">Staff Login</asp:LinkButton>
                            </li>
                            <li class="nav-item pad">
-                              <asp:LinkButton class="nav-item cad" href="userlogin.aspx" ID="Linkbutton3" runat="server">Student Login</asp:LinkButton>
+                              <asp:LinkButton class="nav-item cad" href="studentlogin.aspx" ID="Linkbutton3" runat="server">Student Login</asp:LinkButton>
                            </li>
                         
                  </ul>  

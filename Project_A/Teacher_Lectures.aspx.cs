@@ -156,7 +156,7 @@ namespace Project_A
 
                     GridView1.DataSource = ds;
                     GridView1.DataBind();
-                    DrpCourse();
+                 
                 }
             }
         }
