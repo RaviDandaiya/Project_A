@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Online Assigament project</title>
+    <title>Online Attendance management system project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="datatable/data/jquery.dataTables.min.css" rel="stylesheet" />
@@ -13,10 +13,10 @@
     <style>
         body{
             font-family:Arial, Helvetica, sans-serif;
-            background-image:url(images/rv4.jpg);
+            background-image:url(images/bgd7.jpg);
             background-repeat: no-repeat;
             height:500%;
-            color:white;
+            color:black;
         }
         h3{
             font-family:Arial;
@@ -25,7 +25,7 @@
             margin-left:50px;
         }
         .cad{
-            color:white;
+            color:black;
         }
        .pad{
            margin:0 20px;
@@ -49,10 +49,10 @@
            margin:50px;
        }
        footer{
-           color:white;
+           color:black;
        }
           footer .text a{
-           color:white;
+           color:black;
        }
        .setsize{
            height:620px;
@@ -101,8 +101,8 @@
         </div>
 </section>
          <footer>
-                <blockquote class="blockquote text-center link">
-                    <p>&copy All right Reversed <a class="footer" href="#" >Developed by Ravi</a></p>
+                <blockquote  class="blockquote text-center link">
+                    <p>&copy  All right Reversed <a class="footer" href="#" >Developed by Ravi</a></p>
                 </blockquote>
          </footer>
     </form>

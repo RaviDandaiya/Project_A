@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <center>
-        <div style="background-image:url('../images/bg.jpg'); width:1200px; height:410px;" align="center"  >
+        <div style="background-image:url('../images/bgd13.jpg'); width:1200px; height:410px;" align="center"  >
             
             <center><h1 >Welcome Admin..</h1></center>
 

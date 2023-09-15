@@ -18,7 +18,7 @@ namespace Project_A
 
             if (!IsPostBack)
             {
-                if (Session["SiD"] == null)
+                if (Session["StudID"] == null)
                 {
 
                     Response.Redirect("studentlogin.aspx");
@@ -30,13 +30,13 @@ namespace Project_A
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if (Session["SiD"] == null)
+            if (Session["StudID"] == null)
             {
-                Response.Redirect("studentlogin.aspx");
+                Response.Redirect("sattendance.aspx");
             }
             else
             {
-                string sid = Session["SiD"].ToString();
+                string sid = Session["StudID"].ToString();
                 DateTime datetime = Convert.ToDateTime(Text1.Value);
                 string datime = datetime.ToString("yyyy-MM");
                 SqlConnection con = new SqlConnection(str);
@@ -71,7 +71,7 @@ namespace Project_A
                     SqlDataAdapter sda2 = new SqlDataAdapter(" SELECT LTaken from T_Lectures where Course = '" + course + "' and Year= '" + year + "' and Sem = '" + sem + "' and DATEPART(yy, Date)= '" + datetime.Year + "' and DATEPART(M,Date) ='" + datetime.Month + "' ", con);
 
 
-                    DataSet ds2 = new da();
+                    DataSet ds2 = new DataSet();
                     sda2.Fill(ds2, "T_Lectures");
 
                     int r1 = 0;

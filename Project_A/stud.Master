@@ -42,7 +42,7 @@
             <tr style="width: 1200px; color: Aqua; height: 150px">
                 <td>
                     <asp:Image ID="Image1" runat="server" BorderColor="#666666" BorderWidth="3px" 
-                        Height="150px" ImageUrl="~/images/rv.jpg" Width="1200px" />
+                        Height="150px" ImageUrl="~/images/bgd12.jpg" Width="1200px" />
                 </td>
             </tr>
             <tr style="border-width: 8px; border-color: #666666; width: 1200px; color: #666666; height: 60px" 

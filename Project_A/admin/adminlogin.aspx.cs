@@ -18,11 +18,22 @@ namespace Project_A
        
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //Session value is assign on the text box  
+            if (Session["email"] != null)
+            {
+                TextBox1.Text = Session["email"].ToString();
+            }
+            if (Session["Pwd"] != null)
+            {
+                TextBox2.Text = Session["password"].ToString();
+            }
+          
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            Session["email"] = TextBox1.Text;
+            Session["password"] = TextBox2.Text;
             if (TextBox1.Text != "" && TextBox2.Text != "")
             {
                 SqlConnection con = new SqlConnection("Data Source=DESKTOP-CCNHMQU\\SQLEXPRESS;Initial Catalog=rv1;Integrated Security=True");

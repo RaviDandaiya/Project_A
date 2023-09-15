@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <center>
-<div style="background-image: url('images/background1.jpg'); width: 1200px">
+<div style="background-image:url('../images/bgd13.jpg'); align="center">
     <table align="center" style="height: 340px; width: 392px">
         <tr>
             <td colspan="2" align="center">

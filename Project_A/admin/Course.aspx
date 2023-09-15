@@ -4,13 +4,13 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <center>
-<div style="background-image: url('images/bg.jpg'); width: 1200px; height: 477px">
+ <div style="background-image:url('../images/bgd13.jpg'); align="center"  >
     <asp:SqlDataSource runat="server" ConnectionString="<%$ ConnectionStrings:rv1 %>" ProviderName="<%$ ConnectionStrings:rv1.ProviderName %>" SelectCommand="SELECT [CID], [CourseName] FROM [Course]" ID="ctl00"></asp:SqlDataSource>
     <table align="center" style="width: 386px">
         <tr>
             <td colspan="2" align="center">
-                <h2>
-                    Add Course</h2>
+                <h2>Add Course</h2>
+                    
                 <br />
             </td>
             
@@ -74,6 +74,7 @@
     <br />
     <br />
     <br />
+
     <br />
     </div>
    </div>
