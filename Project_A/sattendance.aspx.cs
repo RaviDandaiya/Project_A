@@ -18,7 +18,7 @@ namespace Project_A
 
             if (!IsPostBack)
             {
-                if (Session["StudID"] == null)
+                if ("StudID" == null)
                 {
 
                     Response.Redirect("studentlogin.aspx");

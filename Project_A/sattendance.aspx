@@ -3,13 +3,16 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+  
+    <center>
+          <div style="background-image:url('../images/wh.jpg'); width: 1200px; align="center">
     <table align="center" style= "width: 386рх">
         <tr>
          <td align="center">
          <h3>Select:</h3>
      </td>
          <td align="center">
-             <input name="startDate" id="Text1" class="date-picker" runat="server" value="" /></td>
+             <input name="startDate" id="Text1"  class="date-picker" runat="server" value="" /></td>
         </tr>
          <tr>
              <td colspan="2" align="center">
@@ -36,6 +39,8 @@
       </td>
          </tr>
         </table> I
+              </div>
+        </center>
                     
 
 </asp:Content>

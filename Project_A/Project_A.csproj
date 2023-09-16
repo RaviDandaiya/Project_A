@@ -104,6 +104,7 @@
     <Content Include="images\studying-abroad.jpg" />
     <Content Include="images\user-image-with-black-background.png" />
     <Content Include="images\user.png" />
+    <Content Include="images\wh.jpg" />
     <Content Include="Mark_Attendance.aspx" />
     <Content Include="sattendance.aspx" />
     <Content Include="stafflogin.aspx" />

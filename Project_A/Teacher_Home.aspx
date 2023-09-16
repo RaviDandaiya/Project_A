@@ -5,7 +5,7 @@
 
 
     <center>
-                <div style="background-image: url('images/bgd12.jpg'); width: 1200px; height:460px">
+                <div style="background-image: url('images/wh.jpg'); width: 1200px; height:460px">
 
         <center><h1>Welcome Teachers..</h1></center>
 
