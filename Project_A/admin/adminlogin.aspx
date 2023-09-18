@@ -28,7 +28,7 @@
                          <div class="row">
                              <div class="col">
                                     <center>
-                                        <img src="../images/2606517_5856.jpg"  width="150px"/>
+                                        <img src="../images/l.png"  width="150px"/>
                                     </center>
                              </div>
                          </div>

@@ -11,6 +11,7 @@ namespace Project_A
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Label1.Text= Session["sid"].ToString();
 
         }
     }

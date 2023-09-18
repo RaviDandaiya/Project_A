@@ -15,10 +15,9 @@ namespace Project_A
         string str = ConfigurationManager.ConnectionStrings["rv1"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
-
             if (!IsPostBack)
             {
-                if ("StudID" == null)
+                if (Session["sid"] == null)
                 {
 
                     Response.Redirect("studentlogin.aspx");
@@ -28,20 +27,24 @@ namespace Project_A
             }
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+      
+        protected void Button1_Click1(object sender, EventArgs e)
         {
-            if (Session["StudID"] == null)
+
+            if (Session["sid"].ToString() == "")
             {
-                Response.Redirect("sattendance.aspx");
+                Response.Redirect("studentlogin.aspx");
             }
             else
             {
-                string sid = Session["StudID"].ToString();
+                string sid = Session["sid"].ToString();
                 DateTime datetime = Convert.ToDateTime(Text1.Value);
-                string datime = datetime.ToString("yyyy-MM");
+                string datime = datetime.ToString("yyyy");
+                string datime1= datetime.ToString("MM");
+                lb.Text = datime;
                 SqlConnection con = new SqlConnection(str);
 
-                SqlDataAdapter sda = new SqlDataAdapter("select Lecture from StudentAttendance where DATEPART(yy, Date) = '" + datetime.Year + "' and DATEPART(M, Date)= '" + datetime.Month + "'and STID = '" + sid + "' ", con);
+                SqlDataAdapter sda = new SqlDataAdapter("select Lecture from StudentAttendance where DATEPART(yy, Date) = '" + datime + "' and DATEPART(M, Date)= '" + datime1 + "'and STID = '" + sid + "' ", con);
 
                 DataSet ds = new DataSet();
                 sda.Fill(ds, "StudentAttendance");
@@ -61,7 +64,7 @@ namespace Project_A
                         r++;
                     }
 
-                    SqlDataAdapter sda1 = new SqlDataAdapter("select Course,Year,Sem from Student where STID='" + sid + "' ", con);
+                    SqlDataAdapter sda1 = new SqlDataAdapter("select Course,Year,Sem from Student where StudID='" + sid + "' ", con);
                     DataSet ds1 = new DataSet();
                     sda1.Fill(ds1, "Student");
                     string course = ds1.Tables[0].Rows[0][0].ToString();

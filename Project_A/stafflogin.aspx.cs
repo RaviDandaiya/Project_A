@@ -30,7 +30,9 @@ namespace Project_A
                 da1.Fill(dt1);
                 if (dt1.Rows.Count != 0)
                 {
-                    Response.Redirect("~/Teacher_Home.aspx");
+                    Session["TeacherID"] = dt1.Rows[0][0].ToString();
+                    Session["TeacherName"] = txtPassword.Text;
+                        Response.Redirect("~/Teacher_Home.aspx");
 
                 }
                 else

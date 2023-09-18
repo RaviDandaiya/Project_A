@@ -12,12 +12,13 @@
          <h3>Select:</h3>
      </td>
          <td align="center">
-             <input name="startDate" id="Text1"  class="date-picker" runat="server" value="" /></td>
+             <input type ="month" name="startDate" id="Text1"  class="date-picker" runat="server" value="" /> 
+             <asp:Label ID="lb" runat="server" Text="Label"></asp:Label> </td>
         </tr>
          <tr>
              <td colspan="2" align="center">
                  <asp:Button ID="Button1" runat="server" Text="Select" Font-Bold="True"
-                   Font-Size="Large" Height="44px" Width="103px"  />
+                     Font-Size="Large" Height="44px" Width="103px" OnClick="Button1_Click1" />
           </td>
         </tr>
         <tr>
@@ -38,7 +39,8 @@
              </asp:Label>
       </td>
          </tr>
-        </table> I
+        </table>
+             
               </div>
         </center>
                     

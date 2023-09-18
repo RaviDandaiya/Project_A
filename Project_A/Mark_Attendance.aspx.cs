@@ -184,6 +184,7 @@ namespace Project_A
                 String sem = DropDownList5.SelectedItem.Text;
                 DateTime date = DateTime.Now;
 
+
                 SqlConnection con1 = new SqlConnection(str);
                 con1.Open();
                 SqlCommand cmd1 = new SqlCommand("insert into T_Lectures(TID,TName,Date,LTaken,Course,Year,Subject,Sem) values(@1,@2,@3,@4,@5,@6,@7,@8)", con1);

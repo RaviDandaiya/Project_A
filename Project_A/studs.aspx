@@ -7,8 +7,11 @@
     <center>
                 <div style="background-image: url('images/wh.jpg'); width: 1200px; height:460px">
 
-        <center><h1>Welcome Studentss..</h1></center>
+        <center><h1>Welcome Studentss..</h1>
 
+          <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        </center>
+                   
     </div>
         </center>
 

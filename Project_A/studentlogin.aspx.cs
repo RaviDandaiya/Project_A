@@ -15,6 +15,8 @@ namespace Project_A
         String str = ConfigurationManager.ConnectionStrings["rv1"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
+            //Session value is assign on the text box  
+           
 
         }
 
@@ -31,6 +33,18 @@ namespace Project_A
                 if (dt1.Rows.Count != 0)
 
                 {
+                 
+                    
+                        Session["semail"] =TextBox1.Text;
+                    
+                  
+                    
+                        Session["sPwd"] =  TextBox2.Text;
+                    
+                  
+                    
+                        Session["sid"] = dt1.Rows[0][0].ToString();
+
                     Response.Redirect("~/studs.aspx");
 
                 }
@@ -38,6 +52,7 @@ namespace Project_A
                 {
                     Response.Write(" <script>    alert('* password is incorrect');  </script>");
                 }
+
 
             }
         }

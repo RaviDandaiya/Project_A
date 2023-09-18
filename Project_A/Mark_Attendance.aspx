@@ -107,6 +107,9 @@
             <tr>
                 <td colspan="10" align="center">
                     <asp:Label ID="Label3" runat="server" Text=""></asp:Label>
+                       <asp:Label ID="Label5" runat="server" Text=""></asp:Label>
+                       <asp:Label ID="Label6" runat="server" Text=""></asp:Label>
+
                 </td>
             </tr>
         </table>
