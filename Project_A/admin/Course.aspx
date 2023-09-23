@@ -5,7 +5,8 @@
 
     <center>
  <div style="background-image:url('../images/wh.jpg'); align="center"  >
-    <asp:SqlDataSource runat="server" ConnectionString="<%$ ConnectionStrings:rv1 %>" ProviderName="<%$ ConnectionStrings:rv1.ProviderName %>" SelectCommand="SELECT [CID], [CourseName] FROM [Course]" ID="ctl00"></asp:SqlDataSource>
+     <asp:SqlDataSource runat="server" ConnectionString="<%$ ConnectionStrings:rv1 %>" ProviderName="<%$ ConnectionStrings:rv1.ProviderName %>" 
+         SelectCommand="SELECT [CID], [CourseName] FROM [Course]" ID="ctl00"></asp:SqlDataSource>
     <table align="center" style="width: 386px">
         <tr>
             <td colspan="2" align="center">

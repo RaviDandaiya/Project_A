@@ -50,7 +50,7 @@ namespace Project_A.admin
         }
         private void clear()
         {
-            DropDownList1.SelectedValue = "Select Course";
+           // DropDownList1.SelectedValue = "Select Course";
             //DropDownList2.SelectedValue = "Select Year";
             //DropDownList3.SelectedValue = "Select Semester";
             TextBox1.Text = "";

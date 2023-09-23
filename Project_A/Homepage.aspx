@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+  
     <title>Online Attendance management system project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="bootstrap/bootstrap.min.css" rel="stylesheet" />
@@ -58,6 +59,10 @@
            height:620px;
            width:300px;
        }
+       .bottom {
+ margin-top: 200px;
+
+       }
     </style>
 </head>
 <body>
@@ -100,7 +105,8 @@
 	</div>
         </div>
 </section>
-         <footer>
+        <p></p>
+         <footer class="bottom">
                 <blockquote  class="blockquote text-center link">
                     <p>&copy  All right Reversed <a class="footer" href="#" >Developed by Ravi</a></p>
                 </blockquote>

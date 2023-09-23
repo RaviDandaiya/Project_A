@@ -24,7 +24,7 @@
 
                 <tr style ="width:1200px; color: aqua; height:150px">
                     <td>
-                        <asp:Image ID ="img" runat="server" BorderColor ="#666666" BorderWidth="3px" Height="150px " ImageUrl="~/images/rv.jpg" 
+                        <asp:Image ID ="img" runat="server" BorderColor ="#666666" BorderWidth="3px" Height="150px " ImageUrl="~/images/rv11.jpg" 
                             Width="1200px" />
                     </td>
                 </tr>

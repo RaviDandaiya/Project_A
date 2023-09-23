@@ -74,6 +74,7 @@
     <Content Include="admin\Subject.aspx" />
     <Content Include="admin\Teacher.aspx" />
     <Content Include="admin\TeacherSubject.aspx" />
+    <Content Include="images\00.png" />
     <Content Include="images\bag.png" />
     <Content Include="bootstrap\bootstrap.min.css" />
     <Content Include="Datatable\data\jquery.dataTables.min.css" />
